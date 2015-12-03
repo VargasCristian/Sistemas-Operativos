@@ -1,0 +1,128 @@
+
+extends ./includes/layout.jade
+
+block title
+    title Round Robin
+
+block content
+    nav
+        include ./includes/nav/nav.jade
+    .algoritmos
+        h2 Round Robin
+        artile.article
+            table
+                tr
+                    td 
+                        label Procesos
+                    td
+                        label Ráfaga CPU
+                tr
+                    td 
+                        label(for="#p1") proceso 1
+                    td 
+                        input(type="text" ).article__input#p1
+                tr
+                    td
+                        label(for="#p2") proceso 2
+                    td
+                        input(type="text").article__input#p2
+                tr
+                    td
+                        label(for="#p3") proceso 3
+                    td
+                        input(type="text").article__input#p3
+                tr
+                    td
+                        label(for="#p4") proceso 4
+                    td
+                        input(type="text").article__input#p4
+                tr
+                    td
+                        label(for="#p5") proceso 5
+                    td
+                        input(type="text").article__input#p5
+                tr
+                    td
+                        label(for="#q") Quantum
+                    td
+                        input(type="text").article__input#q
+
+            button.article__button.fa.fa-chevron-right#calcular
+    article.result.ocultar
+        table
+            tr
+                td
+                    label Procesos
+                td
+                    label Tiempo de Espera
+            tr
+                td
+                    label Proceso 1
+                td
+                    label 0
+            tr
+                td
+                    label Proceso 2
+                td 
+                    label 0
+            tr
+                td
+                    label Proceso 3
+                td
+                    label 0
+            tr
+                td
+                    label Proceso 4
+                td 
+                    label 0
+            tr
+                td
+                    label Proceso 5
+                td 
+                    label 0
+            tr
+                td
+                    label Promedio
+                td
+                    label 0
+    article.result.ocultar
+        table
+            tr
+                td
+                    label Procesos
+                td
+                    label Tiempo de Respuesta
+            tr
+                td
+                    label Proceso 1
+                td
+                    label 0
+            tr
+                td
+                    label Proceso 2
+                td 
+                    label 0
+            tr
+                td
+                    label Proceso 3
+                td
+                    label 0
+            tr
+                td
+                    label Proceso 4
+                td 
+                    label 0
+            tr
+                td
+                    label Proceso 5
+                td 
+                    label 0
+            tr
+                td
+                    label Promedio
+                td
+                    label 0
+
+                    
+block append scripts 
+    script(src="./js/robin.js")

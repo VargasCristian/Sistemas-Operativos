@@ -1,0 +1,32 @@
+extends ./includes/layout.jade
+
+block title
+    title sstf
+
+block content
+    nav
+        include ./includes/nav/nav.jade
+    .algoritmos
+        h1 SSTF
+        artile.article
+            label(for="#cantidad") CANTIDAD DE PISTAS A RECORRER
+            input(type="text" placeholder="Max:9").article__input#cantidad
+            label(for="#pista-inicio") PISTA DE INICIO
+            input(type="text").article__input#inicio
+            button.article__button.fa.fa-chevron-right#calcular
+        article.result.ocultar
+            .result__text
+                p Pistas
+                p Pistas Recorridas
+                p Promedio
+            .result__container
+                .result__container__input
+                .result__container__pistas
+                .result__container__promedio
+            .result__calcular
+                button.result__calcular__button CALCULAR
+
+
+
+block append scripts 
+    script(src="./js/fifo.js")

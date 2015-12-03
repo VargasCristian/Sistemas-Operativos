@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>lru</title>
+  <link rel="stylesheet" href="./css/main.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Days+One" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"/>
+</head>
+<body>
+  <nav>
+    <nav>
+      <ul class="nav">
+        <li class="nav__item"><a href="index.html" class="nav__link">INICIO</a></li>
+      </ul>
+    </nav>
+    <!--        li.nav__item-->
+    <!--            a(href="fifo.html").nav__link FIFO-->
+    <!--        li.nav__item-->
+    <!--            a(href="sstf.html").nav__link SSTF-->
+    <!--        li.nav__item-->
+    <!--            a(href="scan.html").nav__link SCAN-->
+    <!--        li.nav__item-->
+    <!--            a(href="c-scan.html").nav__link C-SCAN-->
+    <!--        li.nav__item-->
+    <!--            a(href="robin.html").nav__link ROUND ROBIN-->
+  </nav>
+  <div class="algoritmos">
+    <h1>LRU</h1>
+    <artile class="article">
+      <label for="#cantidad">CANTIDAD DE REFERENCIAS</label>
+      <input type="text" placeholder="Max:9" id="cantidad" class="article__input"/>
+      <label for="#pista-inicio">CANTIDAD DE MARCOS</label>
+      <input type="text" id="inicio" class="article__input"/>
+      <button id="calcular" class="article__button fa fa-chevron-right"></button>
+    </artile>
+    <article class="result ocultar">
+      <div class="result__text">
+        <p>Referencias</p>
+        <p>Rendimiento Final</p>
+      </div>
+      <div class="result__container">
+        <div class="result__container__input"></div>
+        <div class="result__container__pistas"></div>
+      </div>
+      <div class="result__calcular">
+        <button class="result__calcular__button">CALCULAR</button>
+      </div>
+    </article>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="./js/rfifo.js"></script>
+</body>

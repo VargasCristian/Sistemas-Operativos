@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Round Robin</title>
+  <link rel="stylesheet" href="./css/main.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Days+One" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"/>
+</head>
+<body>
+  <nav>
+    <nav>
+      <ul class="nav">
+        <li class="nav__item"><a href="index.html" class="nav__link">INICIO</a></li>
+      </ul>
+    </nav>
+    <!--        li.nav__item-->
+    <!--            a(href="fifo.html").nav__link FIFO-->
+    <!--        li.nav__item-->
+    <!--            a(href="sstf.html").nav__link SSTF-->
+    <!--        li.nav__item-->
+    <!--            a(href="scan.html").nav__link SCAN-->
+    <!--        li.nav__item-->
+    <!--            a(href="c-scan.html").nav__link C-SCAN-->
+    <!--        li.nav__item-->
+    <!--            a(href="robin.html").nav__link ROUND ROBIN-->
+  </nav>
+  <div class="algoritmos">
+    <h2>Round Robin</h2>
+    <artile class="article">
+      <table>
+        <tr>
+          <td> 
+            <label>Procesos</label>
+          </td>
+          <td>
+            <label>Ráfaga CPU</label>
+          </td>
+        </tr>
+        <tr>
+          <td> 
+            <label for="#p1">proceso 1</label>
+          </td>
+          <td> 
+            <input type="text" id="p1" class="article__input"/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="#p2">proceso 2</label>
+          </td>
+          <td>
+            <input type="text" id="p2" class="article__input"/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="#p3">proceso 3</label>
+          </td>
+          <td>
+            <input type="text" id="p3" class="article__input"/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="#p4">proceso 4</label>
+          </td>
+          <td>
+            <input type="text" id="p4" class="article__input"/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="#p5">proceso 5</label>
+          </td>
+          <td>
+            <input type="text" id="p5" class="article__input"/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="#q">Quantum</label>
+          </td>
+          <td>
+            <input type="text" id="q" class="article__input"/>
+          </td>
+        </tr>
+      </table>
+      <button id="calcular" class="article__button fa fa-chevron-right"></button>
+    </artile>
+  </div>
+  <article class="result ocultar">
+    <table>
+      <tr>
+        <td>
+          <label>Procesos</label>
+        </td>
+        <td>
+          <label>Tiempo de Espera</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Proceso 1</label>
+        </td>
+        <td>
+          <label>0</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Proceso 2</label>
+        </td>
+        <td> 
+          <label>0</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Proceso 3</label>
+        </td>
+        <td>
+          <label>0</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Proceso 4</label>
+        </td>
+        <td> 
+          <label>0</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Proceso 5</label>
+        </td>
+        <td> 
+          <label>0</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Promedio</label>
+        </td>
+        <td>
+          <label>0</label>
+        </td>
+      </tr>
+    </table>
+  </article>
+  <article class="result ocultar">
+    <table>
+      <tr>
+        <td>
+          <label>Procesos</label>
+        </td>
+        <td>
+          <label>Tiempo de Respuesta</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Proceso 1</label>
+        </td>
+        <td>
+          <label>0</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Proceso 2</label>
+        </td>
+        <td> 
+          <label>0</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Proceso 3</label>
+        </td>
+        <td>
+          <label>0</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Proceso 4</label>
+        </td>
+        <td> 
+          <label>0</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Proceso 5</label>
+        </td>
+        <td> 
+          <label>0</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Promedio</label>
+        </td>
+        <td>
+          <label>0</label>
+        </td>
+      </tr>
+    </table>
+  </article>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="./js/robin.js"></script>
+</body>

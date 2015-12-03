@@ -1,0 +1,24 @@
+extends ./includes/layout.jade
+
+block title
+    title Algoritmos
+
+block content
+    section.algoritmos
+        h1 Algoritmos
+        nav
+            ul.nav.algoritmo
+                li.algoritmo__item
+                    a(href="fifo.html").algoritmo__link FIFO
+                li.algoritmo__item
+                    a(href="sstf.html").algoritmo__link SSTF
+                li.algoritmo__item
+                    a(href="scan.html").algoritmo__link SCAN
+                li.algoritmo__item
+                    a(href="c-scan.html").algoritmo__link C-SCAN
+                li.algoritmo__item
+                    a(href="rfifo.html").algoritmo__link Reemplazo de pagina fifo
+                li.algoritmo__item
+                    a(href="optimo.html").algoritmo__link Reemplazo de pagina optimo                
+                li.algoritmo__item
+                    a(href="lru.html").algoritmo__link Reemplazo de pagina LRU

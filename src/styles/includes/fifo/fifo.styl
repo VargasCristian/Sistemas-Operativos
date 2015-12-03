@@ -1,0 +1,121 @@
+.article
+    width 25%
+    margin 0 auto
+    padding 2em
+    background #fff
+    border-radius 5px
+    display flex
+    flex-direction column
+    justify-content center
+    align-items flex-start
+    
+    label 
+        color #333
+    
+    &__input
+        padding .3em .3em .3em .5em
+        line-height 1.7
+        border-radius 5px
+        border none
+        background #fff
+        margin-bottom 1em 
+        width 90%
+        border 1px solid #ccc
+        outline-color transparent
+        font-family: 'Days One', sans-serif;
+        color #53bb96
+        font-size 1.2em
+        &:focus
+            outline-color #53bb96
+            border-color transparent
+    &__button
+        width 50px
+        height 50px
+        margin 0 auto
+        border-radius 50%
+        background #53bb96
+        color #fff
+        border none
+        outline none
+        transition .2s all ease-in-out
+        cursor pointer
+        
+        &:hover
+            transform scale(1.1)
+
+.result
+    display flex
+    justify-content center
+    align-items flex-start
+    max-width 70%
+    margin 0 auto
+    background #fff
+    border-radius 15px
+    padding 2em
+    flex-wrap wrap
+    &__text
+        width 30%
+        text-align right
+        p
+            line-height 2.5
+            margin-right .5em
+            margin 1em auto
+            color #333
+    &__container
+        width 65%
+        display flex
+        flex-wrap wrap
+        justify-content flex-start
+        align-items center
+        
+        &__input, &__pistas, &__promedio
+            width 100%
+            
+        &__input, &__pistas, &__promedio
+            display flex
+            justify-content flex-start
+            align-items center
+            position relative
+        &__pistas, &__promedio
+            text-align center
+            p
+                margin 0 1.34em
+        &__input
+            margin-top 1.3em
+        
+        &__promedio
+            margin-top 2.3em !important
+    &__item
+        width 40px
+        margin-left .5em
+        padding .3em .3em .3em .5em
+        line-height 1
+        border-radius 5px
+        border none
+        background #fff
+        margin-bottom 1em 
+        border 1px solid #ccc
+        outline-color transparent
+        font-family: 'Days One', sans-serif;
+        color #53bb96
+        font-size 1.2em
+        &:focus
+            outline-color #53bb96
+            border-color transparent
+
+.ocultar
+    display none
+
+.result__calcular__button
+    background #53bb96
+    border none
+    padding .5em 1em
+    color #fff
+    font-weight bold
+    font-size 1.2em
+    border-radius 5px
+    cursor pointer
+    transition .2s transform
+    
+    &:active
+        transform scale(.8)

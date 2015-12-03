@@ -1,0 +1,29 @@
+extends ./includes/layout.jade
+
+block title
+    title fifo
+block content
+    nav
+        include ./includes/nav/nav.jade
+    .algoritmos
+        h1 FIFO
+        artile.article
+            label(for="#cantidad") CANTIDAD DE REFERENCIAS
+            input(type="text" placeholder="Max:9").article__input#cantidad
+            label(for="#pista-inicio") CANTIDAD DE MARCOS
+            input(type="text").article__input#inicio
+            button.article__button.fa.fa-chevron-right#calcular
+        article.result.ocultar
+            .result__text
+                p Referencias
+                p Rendimiento Final
+            .result__container
+                .result__container__input
+                .result__container__pistas
+            .result__calcular
+                button.result__calcular__button CALCULAR
+
+
+
+block append scripts 
+    script(src="./js/rfifo.js")
